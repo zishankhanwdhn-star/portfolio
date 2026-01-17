@@ -1,0 +1,130 @@
+:root {
+  --bg: #0f172a;
+  --text: #ffffff;
+  --card: #1e293b;
+  --primary: #6366f1;
+  --secondary: #22d3ee;
+}
+
+body.light {
+  --bg: #f5f7ff;
+  --text: #0f172a;
+  --card: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.navbar a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 38px;
+}
+
+.home span {
+  color: #facc15;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 25px;
+  margin: 6px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--secondary);
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 25px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.light {
+  background: var(--card);
+  color: #000;
+}
+
+/* SKILLS */
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.skills li {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+}
